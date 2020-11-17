@@ -3,6 +3,7 @@ package com.dhanush.array;
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 
+@SuppressWarnings("unchecked")
 public class ArrayList<T> {
     private final T[] items;
     private final int size;
