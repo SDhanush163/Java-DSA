@@ -13,18 +13,18 @@ public class SinglyLinkedList<T> {
         }
     }
 
-    private Node first;
-    private Node last;
+    private Node head;
+    private Node tail;
     private int size;
 
     public void addFirst(T item) {
         Node node = new Node(item);
 
         if (isEmpty())
-            first = last = node;
+            head = tail = node;
         else {
-            node.next = first;
-            first = node;
+            node.next = head;
+            head = node;
         }
         size++;
     }
@@ -33,10 +33,10 @@ public class SinglyLinkedList<T> {
         Node node = new Node(item);
 
         if (isEmpty())
-            first = last = node;
+            head = tail = node;
         else {
-            last.next = node;
-            last = node;
+            tail.next = node;
+            tail = node;
         }
         size++;
     }
@@ -51,14 +51,14 @@ public class SinglyLinkedList<T> {
             throw new NoSuchElementException(errorMessage);
         }
 
-        if (first == last) {
-            first = last = null;
+        if (head == tail) {
+            head = tail = null;
             return;
         }
 
-        Node temp = first.next;
-        first.next = null;
-        first = temp;
+        Node temp = head.next;
+        head.next = null;
+        head = temp;
         size--;
     }
 
@@ -68,13 +68,13 @@ public class SinglyLinkedList<T> {
             throw new NoSuchElementException(errorMessage);
         }
 
-        if (first == last) {
-            first = last = null;
+        if (head == tail) {
+            head = tail = null;
             return;
         }
 
-        last = getPreviousNode(last);
-        last.next = null;
+        tail = getPreviousNode(tail);
+        tail.next = null;
         size--;
     }
 
@@ -82,8 +82,8 @@ public class SinglyLinkedList<T> {
         if(isEmpty())
             return;
 
-        Node previous = first;
-        Node current = first.next;
+        Node previous = head;
+        Node current = head.next;
 
         while (current != null) {
             Node next = current.next;
@@ -92,14 +92,14 @@ public class SinglyLinkedList<T> {
             current = next;
         }
 
-        last = first;
-        last.next = null;
-        first = previous;
+        tail = head;
+        tail.next = null;
+        head = previous;
     }
 
     public int indexOf(T item) {
         int index = 0;
-        Node currentNode = first;
+        Node currentNode = head;
 
         while (currentNode != null) {
             if (currentNode.value == item)
@@ -115,7 +115,7 @@ public class SinglyLinkedList<T> {
     }
 
     public boolean isEmpty() {
-        return first == null;
+        return head == null;
     }
 
     public int size () {
@@ -125,7 +125,7 @@ public class SinglyLinkedList<T> {
     public T[] toArray() {
         T[] array = (T[]) new Object[size];
         int index = 0;
-        Node current = first;
+        Node current = head;
 
         while (current != null) {
             array[index++] = current.value;
@@ -137,7 +137,7 @@ public class SinglyLinkedList<T> {
 
     // Helper methods
     private Node getPreviousNode(Node node) {
-        Node currentNode = first;
+        Node currentNode = head;
         while (currentNode != null) {
             if (currentNode.next == node)
                 return  currentNode;
