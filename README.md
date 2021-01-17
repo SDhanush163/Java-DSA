@@ -43,7 +43,7 @@ Repository for Data structures and Algorithms using Java.
 
 ### Hash Table
 
--   [Hash Table implementation with chaining](DataStructures\HashTables\src\com\dhanush\hashtable\HashTable.java)
+-   [Hash Table implementation with chaining](DataStructures/HashTables/src/com/dhanush/hashtable/HashTable.java)
 
 ![hash-with-chaining](images/hash-with-chaining.png)
 
