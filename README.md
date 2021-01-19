@@ -24,27 +24,45 @@ Repository for Data structures and Algorithms using Java.
 -   [Singly Linked List implementation](DataStructures/LinkedList/src/com/dhanush/linkedList/SinglyLinkedList.java)
 -   [Doubly Linked List implementation](DataStructures/LinkedList/src/com/dhanush/linkedList/DoublyLinkedList.java)
 
-![Singly-linked-list](images/singly-linked-list.png)
-![Doubly-linked-list](images/doubly-linked-list.png)
+    ![Singly-linked-list](./images/singly-linked-list.png)
+    ![Doubly-linked-list](./images/doubly-linked-list.png)
 
 ### Stacks
 
 -   [Array-based stack implementation](DataStructures/Stacks/src/com/dhanush/stack/ArrayStack.java)
 -   [Linked list-based stack implementation](DataStructures/Stacks/src/com/dhanush/stack/ListStack.java)
 
-![lifo-stack-implementation](images/lifo-stack.png)
+    ![lifo-stack-implementation](./images/lifo-stack.png)
 
 ### Queues
 
 -   [Array Queue implementation](DataStructures/Queues/src/com/dhanush/queue/ArrayQueue.java)
 -   [Stack Queue implementation](DataStructures/Queues/src/com/dhanush/queue/StackedQueue.java)
 
-![fifo-stack-implementation](images/fifo-queue.png)
+    ![fifo-stack-implementation](./images/fifo-queue.png)
 
 ### Hash Table
 
 -   [Hash Table implementation with chaining](DataStructures/HashTables/src/com/dhanush/hashtable/HashTable.java)
 
-![hash-with-chaining](images/hash-with-chaining.png)
+    ![hash-with-chaining](./images/hash-with-chaining.png)
 
-> <sub><sup>I don't own any of the photos. They have been taken from [Programiz/DSA](https://www.programiz.com/dsa)</sup></sub>
+### Binary Trees
+
+-   [Binary Search Tree](DataStructures/BinaryTrees/src/com/dhanush/tree/BinarySearchTree.java)
+
+    ![binary-tree](./images/binary-tree.png)
+
+## Algorithms
+
+### Sorting Algorithms
+
+-   [Bubble Sort](Algorithms/SortingAlgorithms/src/com/dhanush/sorter/BubbleSort.java)
+
+    ![bubble-sort](./images/bubble-sort.gif)
+
+-   [Selection Sort](Algorithms/SortingAlgorithms/src/com/dhanush/sorter/SelectionSort.java)
+
+    ![selection-sort](./images/selection-sort.gif)
+
+> <sub><sup>I don't own any of the photos. Data structures images have been taken from [Programiz/DSA](https://www.programiz.com/dsa)</sup></sub>
