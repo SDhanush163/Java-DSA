@@ -195,6 +195,6 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
     @Override
     public String toString() {
-        return traverseLevelOrder().toString();
+        return traverseInOrder().toString();
     }
 }
