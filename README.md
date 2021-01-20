@@ -50,6 +50,7 @@ Repository for Data structures and Algorithms using Java.
 ### Binary Trees
 
 -   [Binary Search Tree](DataStructures/BinaryTrees/src/com/dhanush/tree/BinarySearchTree.java)
+-   [AVL Tree](DataStructures/BinaryTrees/src/com/dhanush/tree/AVLTree.java)
 
     ![binary-tree](./images/binary-tree.png)
 
@@ -64,5 +65,13 @@ Repository for Data structures and Algorithms using Java.
 -   [Selection Sort](Algorithms/SortingAlgorithms/src/com/dhanush/sorter/SelectionSort.java)
 
     ![selection-sort](./images/selection-sort.gif)
+
+-   [Insertion Sort](Algorithms/SortingAlgorithms/src/com/dhanush/sorter/InsertionSort.java)
+
+    ![insertion-sort](./images/insertion-sort.gif)
+
+-   [Merge Sort](Algorithms/SortingAlgorithms/src/com/dhanush/sorter/MergeSort.java)
+
+    ![merge-sort](./images/merge-sort.gif)
 
 > <sub><sup>I don't own any of the photos. Data structures images have been taken from [Programiz/DSA](https://www.programiz.com/dsa)</sup></sub>
