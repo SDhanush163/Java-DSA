@@ -1,9 +1,6 @@
 package com.dhanush;
 
-import com.dhanush.sorter.BubbleSort;
-import com.dhanush.sorter.InsertionSort;
-import com.dhanush.sorter.MergeSort;
-import com.dhanush.sorter.SelectionSort;
+import com.dhanush.sorter.*;
 
 import java.util.Arrays;
 
@@ -37,5 +34,26 @@ public class Main {
         System.out.println("Unsorted : " + Arrays.toString(arr4));
         mergeSort.sort(arr4);
         System.out.println("Sorted : " + Arrays.toString(arr4));
+
+        System.out.println("\n---------------- Quick Sort ----------------");
+        int[] arr5 = {3,2,10,9,12,8};
+        QuickSort quickSort = new QuickSort();
+        System.out.println("Unsorted : " + Arrays.toString(arr5));
+        quickSort.sort(arr5);
+        System.out.println("Sorted : " + Arrays.toString(arr5));
+
+        System.out.println("\n-------------- Counting Sort ---------------");
+        int[] arr6 = {2,1,2,4,8,2,3,6,8,2,2,2,4,7,7};
+        CountingSort countingSort = new CountingSort();
+        System.out.println("Unsorted : " + Arrays.toString(arr6));
+        countingSort.sort(arr6);
+        System.out.println("Sorted : " + Arrays.toString(arr6));
+
+        System.out.println("\n--------------- Bucket Sort ----------------");
+        int[] arr7 = {7,3,8,4,6,8,3,2,12};
+        BucketSort bucketSort = new BucketSort();
+        System.out.println("Unsorted : " + Arrays.toString(arr7));
+        bucketSort.sort(arr7, 4);
+        System.out.println("Sorted : " + Arrays.toString(arr7));
     }
 }
