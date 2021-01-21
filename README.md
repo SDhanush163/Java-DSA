@@ -74,4 +74,16 @@ Repository for Data structures and Algorithms using Java.
 
     ![merge-sort](./images/merge-sort.gif)
 
+-   [Quick Sort](Algorithms/SortingAlgorithms/src/com/dhanush/sorter/QuickSort.java)
+
+    ![quick-sort](./images/quick-sort.gif)
+
+-   [Counting Sort](Algorithms/SortingAlgorithms/src/com/dhanush/sorter/CountingSort.java)
+
+    ![counting-sort](./images/counting-sort.gif)
+
+-   [Bucket Sort](Algorithms/SortingAlgorithms/src/com/dhanush/sorter/BucketSort.java)
+
+    ![bucket-sort](./images/bucket-sort.gif)
+
 > <sub><sup>I don't own any of the photos. Data structures images have been taken from [Programiz/DSA](https://www.programiz.com/dsa)</sup></sub>
